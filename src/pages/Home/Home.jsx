@@ -12,7 +12,6 @@ import styles from './HeroSection.module.scss';
 //cards
 import projectimg from '../../assets/projects/project.png';
 import Card from '../../components/Card/Card';
-import Footer from '../../components/Footer/Footer';
 import Bento from '../../components/Bento/Bento';
 import bulb from '../../assets/Stickers/bulb.png'
 import Stickers from '../../components/Stickers/Stickers';
@@ -62,7 +61,7 @@ const Home = () => {
           <h1 className={styles.heroTitle}>Not so product designer,<br />
             Part time photographer,<br />
             love food, music, art</h1>
-          <h2 className={styles.heroSubtitle}>It's <span>नमन भटेजा </span>👋 , Your friendly neighbourhood product based in Delhi,<br />
+          <h2 className={styles.heroSubtitle}>It's <strong>नमन भटेजा </strong> <span>👋</span> , Your friendly neighbourhood product based in Delhi,<br />
             India. I enjoy crafting exceptional digital interfaces that offer<br />
             delightful and intuitive experiences.</h2>
           <p className={styles.heroText}>I worked with...</p>
