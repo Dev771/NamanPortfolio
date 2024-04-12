@@ -1,0 +1,53 @@
+.navbar {
+  background-color: var(--nav-background-color);
+  display: flex;
+  width: 600px;
+  max-height: 48px;
+  padding: 8px 16px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease-in-out;
+
+  border-radius: 1920px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+
+.navLogo {
+  color: var(--nav-color);
+  height: 32px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+
+  li a {
+    color: var(--nav-color);
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+
+  }
+}
+
+.toggle {
+  position: absolute;
+  top: -6px;
+  right: 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  scale: 0.30;
+}

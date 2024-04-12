@@ -1,0 +1,177 @@
+:root {
+  /** sunny side **/
+  --blue-background: white;
+  --blue-border: #d9f4fb;
+  --blue-color: white;
+  --yellow-background: #fffaa8;
+  --yellow-border: #f5eb71;
+  /** dark side **/
+  --indigo-background: rgb(87, 87, 87);
+  --indigo-border: rgb(87, 87, 87);
+  --indigo-color: rgb(87, 87, 87);
+  --gray-border: #e8e8ea;
+  --gray-dots: #e8e8ea;
+  /** general **/
+  --white: #ffffff;
+}
+
+.toggleCheckbox {
+  cursor: pointer;
+  display: none;
+}
+
+.toggleCheckbox:checked {
+  // Changes when checkbox is checked
+}
+
+.toggleCheckbox:checked~.background {
+  cursor: pointer;
+  background: var(--indigo-background);
+}
+
+.toggleCheckbox:checked+.toggleLabel {
+  cursor: pointer;
+  background: var(--indigo-color);
+  border-color: var(--indigo-border);
+}
+
+.toggleCheckbox:checked+.toggleLabel .toggleLabelBackground {
+  cursor: pointer;
+  left: 60px;
+  width: 5px;
+}
+
+.toggleCheckbox:checked+.toggleLabel .toggleLabelBackground:before,
+.toggleCheckbox:checked+.toggleLabel .toggleLabelBackground:after {
+  cursor: pointer;
+  width: 5px;
+  height: 5px;
+}
+
+.toggleCheckbox:checked+.toggleLabel:before {
+  cursor: pointer;
+  background: var(--white);
+  border-color: var(--gray-border);
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+
+.toggleCheckbox:checked+.toggleLabel:after {
+  cursor: pointer;
+  transition-delay: 350ms;
+  opacity: 1;
+}
+
+.toggleLabel {
+  cursor: pointer;
+  width: 200px;
+  height: 100px;
+  background: var(--blue-color);
+  border-radius: 100px;
+  border: 5px solid var(--blue-border);
+  display: flex;
+  position: relative;
+  transition: all 350ms ease-in;
+}
+
+.toggleLabelBackground {
+  cursor: pointer;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 135px;
+  top: 45px;
+  transition: all 150ms ease-in;
+
+  &:before,
+  &:after {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    transition: all 150ms ease-in;
+  }
+
+  &:before {
+    cursor: pointer;
+    top: -5px;
+    left: -20px;
+  }
+
+  &:after {
+    cursor: pointer;
+    top: 5px;
+    left: -10px;
+  }
+}
+
+.toggleLabel:before {
+  content: "";
+  cursor: pointer;
+  width: 82px;
+  height: 82px;
+  border: 5px solid var(--yellow-border);
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  border-radius: 82px;
+  background: var(--yellow-background);
+  transition: all 350ms ease-in;
+  animation-name: reverse;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+
+.toggleLabel:after {
+  cursor: pointer;
+  transition-delay: 0ms;
+  transition: all 250ms ease-in;
+  position: absolute;
+  content: "";
+  box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+  left: 143px;
+  top: 23px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+@keyframes switch {
+  0% {
+    left: 4px;
+  }
+
+  60% {
+    left: 4px;
+    width: 112px;
+  }
+
+  100% {
+    left: 104px;
+    width: 82px;
+  }
+}
+
+@keyframes reverse {
+  0% {
+    left: 104px;
+    width: 82px;
+  }
+
+  60% {
+    left: 72px;
+    width: 112px;
+  }
+
+  100% {
+    left: 4px;
+  }
+}

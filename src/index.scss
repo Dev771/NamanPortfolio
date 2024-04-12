@@ -1,0 +1,54 @@
+// Light theme (default)
+:root {
+  //nav
+  --nav-background-color: rgba(13, 13, 13, 0.80);
+  --nav-color: #EAEAEA;
+
+  //footer
+  --footer-background-color: #F8FAF5;
+  --footer-border-color: #EEF3DD;
+  --footer-color: #616161;
+
+  --background-color: #F8FAF5;
+  --text-color: #000;
+
+
+  ::-webkit-scrollbar {
+    width: 2px;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+// Dark theme
+[data-theme='dark'] {
+  //nav
+  --nav-background-color: #d5d5d5f0;
+  --nav-color: #121212;
+
+
+  //footer
+  --footer-background-color: rgba(151, 151, 151, 0.40);
+  ;
+  --footer-border-color: #ACACAC;
+  --footer-color: #999;
+
+  --background-color: #363537;
+  --text-color: #FAFAFA;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  transition: color 0.1s ease-in, background-color 0.1s ease-in ,scale 0.1s ease-in ;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+  background-color: var(--background-color);
+
+
+}
