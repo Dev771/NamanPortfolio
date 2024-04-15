@@ -110,7 +110,7 @@ const Home = () => {
         <div className={styles.sticker2}><Stickers color={'#BA8C8C'} img={cup} /></div>
         <h2 className={styles.title}>
           <span>
-            Current Favourite Playlist
+            Current Favorite Playlist
           </span>
         </h2>
         <div className={styles.cards}>

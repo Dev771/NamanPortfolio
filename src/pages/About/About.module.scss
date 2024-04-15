@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -19,7 +19,7 @@
   padding: 20px;
   padding-top: calc(80px + 80px);
   height: calc(100% + 20px);
-  width: 100vw;
+  width: 100%;
 
   .bgImage {
     position: absolute;
