@@ -129,9 +129,59 @@
     }
   }
 
-  .sticker2 {
+  .sticker {
     position: absolute;
     top: -50px;
     left: 97px;
+  }
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+  position: relative;
+
+  .sticker1 {
+    position: absolute;
+    top: 215px;
+    left: 177px;
+  }
+  .sticker2 {
+    position: absolute;
+    top: -20px;
+    right: 152px;
+  }
+
+  .title {
+    color: #919191;
+    font-family: Inter;
+    font-size: 13.125px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.2px;
+    /* 138.667% */
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    span {
+      width: 600px;
+      text-align: start;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
   }
 }

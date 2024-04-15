@@ -5,6 +5,10 @@ import BGsrc from '../../assets/heroBG.png';
 import goodspaceLogoSrc from '../../assets/goodspace.svg';
 import bharatiLogoSrc from '../../assets/bharati.svg';
 import kloudracLogoSrc from '../../assets/kloudrac.svg';
+import kk from '../../assets/Album/kk.png';
+import kkred from '../../assets/Album/red.png';
+import em from '../../assets/Album/em.png';
+import darkred from '../../assets/Album/darkred.png';
 
 
 
@@ -15,7 +19,10 @@ import Card from '../../components/Card/Card';
 import Footer from '../../components/Footer/Footer';
 import Bento from '../../components/Bento/Bento';
 import bulb from '../../assets/Stickers/bulb.png'
+import char from '../../assets/Stickers/char.png'
+import cup from '../../assets/Stickers/cup.png'
 import Stickers from '../../components/Stickers/Stickers';
+import MusicCard from '../../components/MusicCard/MusicCard';
 
 const cardData = [
   {
@@ -77,7 +84,7 @@ const Home = () => {
       <Bento />
 
       <section className={styles.projectSection}>
-        <div className={styles.sticker2}>
+        <div className={styles.sticker}>
           <Stickers color={'#72B0A6'} img={bulb} />
         </div>
         <h2 className={styles.title}>
@@ -99,6 +106,19 @@ const Home = () => {
         </div>
       </section>
 
+      <section className={styles.playlist}>
+        <div className={styles.sticker1}><Stickers color={'#CF7100'} img={char} /></div>
+        <div className={styles.sticker2}><Stickers color={'#BA8C8C'} img={cup} /></div>
+        <h2 className={styles.title}>
+          <span>
+            Current Favourite Playlist
+          </span>
+        </h2>
+        <div className={styles.cards}>
+          <MusicCard title='Say Something ' singer='Justin Timberlake, Chris Stapleton' albumCover={kk} vinyl={kkred} songUrl=''/>
+          <MusicCard title='Say Something ' singer='Justin Timberlake, Chris Stapleton' albumCover={em} vinyl={darkred} />
+        </div>
+      </section>
     </>
   )
 }

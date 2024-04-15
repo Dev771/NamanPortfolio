@@ -3,6 +3,8 @@
   bottom: 0;
   transition: all 1s;
   z-index: -1;
+
+
 }
 
 @keyframes rotate {
@@ -22,9 +24,14 @@
   display: flex;
   justify-content: center;
   transition: all 1s;
+
+  img {
+    height: 105px;
+  }
 }
 
 .sticker>img {
+
   transition: all 1s;
 }
 

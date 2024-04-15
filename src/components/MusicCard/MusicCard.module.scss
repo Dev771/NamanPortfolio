@@ -1,0 +1,98 @@
+.albumContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 64px;
+  background-color: var(--footer-background-color);
+  padding: 20px 22px;
+  border-radius: 8px;
+  width: 600px;
+  max-height: 134px;
+  border: 1px solid #EEF3DD;
+  // background: #F8FAF5;
+}
+
+.albumDetails {
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.albumCover {
+  position: relative;
+  z-index: 1;
+
+  img {
+    height: 94px;
+  }
+}
+
+.vinyl {
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  z-index: 0;
+  transition: all 1s linear;
+
+  img {
+    height: 94px;
+    transition: all 1s linear;
+  }
+}
+
+
+@keyframes slideAndRotateVinyl {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  0.2% {
+    transform: translateX(30px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(30px) rotate(36000deg);
+  }
+}
+
+.vinylAnimated img {
+  animation: slideAndRotateVinyl 300s linear infinite;
+}
+
+@keyframes slideBackAndStopRotate {
+  from {
+    transform: translateX(30px) rotate(360deg);
+  }
+
+  to {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.vinylReturn img {
+  animation: slideBackAndStopRotate 1s ease-out forwards;
+}
+
+.albumMetadata {
+
+  .title {
+  color: var(--text-color);
+    font-family: "DM Sans";
+    font-size: 27.891px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.6px;
+    /* 120.471% */
+  }
+
+  .singer {
+    color: var(--footer-color);
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+    /* 160% */
+  }
+}
