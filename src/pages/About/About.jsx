@@ -12,6 +12,7 @@ import look from '../../assets/Gallary/look.png';
 import naman from '../../assets/Gallary/naman.png';
 import pasta from '../../assets/Gallary/pasta.png';
 import plane from '../../assets/Gallary/plane.png';
+import nike from '../../assets/Stickers/nike.png';
 import tea from '../../assets/Gallary/tea.png';
 import temple from '../../assets/Gallary/temple.png';
 
@@ -19,8 +20,8 @@ import temple from '../../assets/Gallary/temple.png';
 const About = () => {
   return (
     <section className={styles.container}>
+      {/* <img src={BGsrc} alt="Background" className={styles.bgImage} /> */}
       <section className={styles.heroSection}>
-        <img src={BGsrc} alt="Background" className={styles.bgImage} />
         <div className={styles.heroContent}>
           <time className={styles.heroTime}><TimeConverter inputTime={new Date()} /> local time</time>
           <h1 className={styles.heroTitle}>A little more about me...</h1>
@@ -56,7 +57,7 @@ const About = () => {
 
       <section className={styles.textContent}>
         <div className={styles.sticker}>
-          <Stickers />
+          <Stickers img={nike} color={'#97AAEC'} />
         </div>
         <p>Hey, welcome to my digital abode. Nice to meet you!</p>
         <p>Hey there! I'm Naman Bhateja, an emerging UX/UI designer on an exhilarating journey of learning and exploration in the world of design. Inspired by a personal experience that left me yearning for better solutions, I'm driven by the passion to create seamless, user-centric experiences. <br />

@@ -1,10 +1,31 @@
+.container {
+  position: relative;
+  background-image: none;
+  /* No background image directly on the container */
+  z-index: 1;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/heroBG.png');
+  /* Background image on the pseudo-element */
+  background-repeat: repeat;
+  opacity: 0.5;
+  /* Opacity applied only to the background image */
+  z-index: -1;
+}
+
 .heroSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: var(--background-color);
   color: var(--text-color);
   padding: 20px;
   padding-top: calc(80px + 80px);
@@ -157,10 +178,11 @@
   }
 
   .cardsContainer {
-    display: flex;
-    gap: 40px;
-    flex-direction: row;
-    overflow: scroll;
+    // display: flex;
+    // gap: 40px;
+    // flex-direction: row;
+    // overflow: scroll;
+    position: relative;
     padding-top: 80px;
     padding-bottom: 135px;
 
@@ -169,6 +191,25 @@
 
     ::-webkit-scrollbar {
       display: none;
+    }
+
+    .carouselBtn {
+      scale: 0.8;
+      outline: none;
+      text-decoration: none;
+      border: none;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.50);
+      position: absolute;
+      top: 45%;
+      z-index: 1;
+      transition: background-color 0.2s ease-in;
+      cursor: pointer;
+
+      &:hover {
+
+        background-color: rgb(133, 133, 133);
+      }
     }
   }
 
@@ -192,6 +233,7 @@
     top: 215px;
     left: 177px;
   }
+
   .sticker2 {
     position: absolute;
     top: -20px;

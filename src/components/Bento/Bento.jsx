@@ -7,7 +7,11 @@ import Stickers from '../Stickers/Stickers';
 import styles from './Bento.module.scss';
 
 // img
-import carouselItem from '../../assets/Carousel/carousel.png'
+import carouselItem1 from '../../assets/Carousel/carousel1.png'
+import carouselItem2 from '../../assets/Carousel/carousel2.png'
+import carouselItem3 from '../../assets/Carousel/carousel3.png'
+import carouselItem4 from '../../assets/Carousel/carousel4.png'
+import carouselItem5 from '../../assets/Carousel/carousel5.png'
 import nikeImg from '../../assets/FrameNike.png'
 import Mario from '../../assets/mario.gif'
 import Psyduck from '../../assets/Stickers/GroupPsyduck.png';
@@ -20,7 +24,7 @@ const Bento = () => {
         <Carousel
           infiniteLoop
           autoPlay
-          interval={5000}
+          interval={3000}
           showThumbs={false}
           showArrows={false}
           showStatus={false}
@@ -29,13 +33,19 @@ const Bento = () => {
           centerSlidePercentage={85}
         >
           <div className={styles.carouselItem}>
-            <img src={carouselItem} alt="" />
+            <img src={carouselItem1} alt="" />
           </div>
           <div className={styles.carouselItem}>
-            <img src={carouselItem} alt="" />
+            <img src={carouselItem2} alt="" />
           </div>
           <div className={styles.carouselItem}>
-            <img src={carouselItem} alt="" />
+            <img src={carouselItem3} alt="" />
+          </div>
+          <div className={styles.carouselItem}>
+            <img src={carouselItem4} alt="" />
+          </div>
+          <div className={styles.carouselItem}>
+            <img src={carouselItem5} alt="" />
           </div>
         </Carousel>
       </div>

@@ -1,4 +1,5 @@
 import TimeConverter from '../../utilities/Time/TimeConverter';
+import { Carousel } from 'react-responsive-carousel';
 // logo
 import logoSrc from '../../assets/hero.svg';
 import BGsrc from '../../assets/heroBG.png';
@@ -58,10 +59,10 @@ const Home = () => {
 
 
   return (
-    <>
+    <div className={styles.container}>
 
       <section className={styles.heroSection}>
-        <img src={BGsrc} alt="Background" className={styles.bgImage} />
+        {/* <img src={BGsrc} alt="Background" className={styles.bgImage} /> */}
         <div className={styles.heroIcon}> <img src={logoSrc} alt="Logo" /></div>
         <div className={styles.heroContent}>
           <time className={styles.heroTime}><TimeConverter inputTime={new Date()} /> local time</time>
@@ -92,16 +93,43 @@ const Home = () => {
           </span>
         </h2>
         <div className={styles.cardsContainer}>
-          {cardData.map((card, index) => (
-            <Card
-              key={index}
-              projectimg={card.projectimg}
-              date={card.date}
-              title={card.title}
-              description={card.description}
-              url={card.url}
-            />
-          ))}
+          <Carousel
+            infiniteLoop
+            autoPlay
+            interval={5000}
+            // showThumbs={false}
+            // showArrows={false}
+            showStatus={false}
+            emulateTouch
+            centerMode
+            centerSlidePercentage={60}
+
+            renderArrowPrev={(onClickHandler, hasPrev, labelPrev) =>
+              hasPrev && (
+                <button type="button" onClick={onClickHandler} title={labelPrev} className={styles.carouselBtn} style={{ transform: 'rotateY(180deg)', left: '10%' }}>
+                  <NextIcon />
+                </button>
+              )
+            }
+            renderArrowNext={(onClickHandler, hasNext, labelNext) =>
+              hasNext && (
+                <button type="button" onClick={onClickHandler} title={labelNext} className={styles.carouselBtn} style={{right: '10%'}} >
+                  <NextIcon />
+                </button>
+              )
+            }
+          >
+            {cardData.map((card, index) => (
+              <Card
+                key={index}
+                projectimg={card.projectimg}
+                date={card.date}
+                title={card.title}
+                description={card.description}
+                url={card.url}
+              />
+            ))}
+          </Carousel>
         </div>
       </section>
 
@@ -114,12 +142,20 @@ const Home = () => {
           </span>
         </h2>
         <div className={styles.cards}>
-          <MusicCard title='Say Something ' singer='Justin Timberlake, Chris Stapleton' albumCover={kk} vinyl={kkred} songUrl=''/>
+          <MusicCard title='Say Something ' singer='Justin Timberlake, Chris Stapleton' albumCover={kk} vinyl={kkred} songUrl='' />
           <MusicCard title='Say Something ' singer='Justin Timberlake, Chris Stapleton' albumCover={em} vinyl={darkred} />
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
 export default Home
+
+
+const NextIcon = () => (
+  <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2929 19.7929C26.6834 19.4024 27.3166 19.4024 27.7071 19.7929L37.7071 29.7929C38.0976 30.1834 38.0976 30.8166 37.7071 31.2071L27.7071 41.2071C27.3166 41.5976 26.6834 41.5976 26.2929 41.2071C25.9024 40.8166 25.9024 40.1834 26.2929 39.7929L35.5858 30.5L26.2929 21.2071C25.9024 20.8166 25.9024 20.1834 26.2929 19.7929Z" fill="white" />
+  </svg>
+
+)

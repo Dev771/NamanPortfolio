@@ -3,7 +3,7 @@ import styles from './Card.module.scss';
 
 const Card = ({ projectimg, date, title, description, url }) => {
   return (
-    <>
+    <div className={styles.container}>
       <article className={styles.card}>
         <a href={url} className={styles.card}>
 
@@ -21,7 +21,7 @@ const Card = ({ projectimg, date, title, description, url }) => {
           </div>
         </a>
       </article>
-    </>
+    </div>
   );
 };
 
