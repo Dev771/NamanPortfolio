@@ -23,6 +23,7 @@ import char from '../../assets/Stickers/char.png'
 import cup from '../../assets/Stickers/cup.png'
 import Stickers from '../../components/Stickers/Stickers';
 import MusicCard from '../../components/MusicCard/MusicCard';
+import MobileBento from '../../components/MobileBento/MobileBento';
 
 const cardData = [
   {
@@ -82,6 +83,11 @@ const Home = () => {
       </section>
 
       <Bento />
+      
+      <div className={styles.mobileBento}>
+        <h3 className={styles.title}>Some selected shots</h3>
+        <MobileBento />
+      </div>
 
       <section className={styles.projectSection}>
         <div className={styles.sticker}>

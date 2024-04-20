@@ -21,9 +21,8 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 20.79%, rgba(0, 0, 0, 0.43) 70.41%, rgba(0, 0, 0, 0.91) 96.41%), #FFF;
 
   @media screen and (max-width:500px) {
-    height: 400px;
+    height: 100%;
     width: 100%;
-    background: none;
   }
 }
 
@@ -34,11 +33,9 @@
 }
 
 .footer {
-  max-width: 100%;
-  width: calc(100% - 32px);
-  padding: 20px 0px;
+  width: 100%;
+  padding: 20px 32px;
   gap: 24px;
-  padding-left: 32px;
   background-color: transparent;
   position: absolute;
   z-index: 9;
@@ -47,17 +44,21 @@
   align-items: center;
 
   @media screen and (max-width:500px) {
-    padding: 22px 20px;
+    padding: 0;
     position: unset;
     background-color: var(--nav-color);
     color: var(--text-color);
-    width: calc(100% - 40px);
+    width: 100%;
   }
 }
 
 .details {
   margin-bottom: 10px;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 
   .date {
     color: #FFF;
@@ -71,7 +72,6 @@
   }
 
   .title {
-    color: var(--text-color);
     font-family: "DM Sans";
     font-size: 27.891px;
     font-style: normal;
@@ -81,7 +81,6 @@
   }
 
   .description {
-    color: var(--text-color);
     font-family: "DM Sans";
     font-size: 16px;
     font-style: normal;
@@ -91,6 +90,9 @@
   }
 
   @media screen and (max-width:500px) {
+    padding: 22px 20px;
+    margin: 0;
+
     .date {
       color: #919191;
       font-size: 13.13px;
@@ -100,6 +102,7 @@
     }
 
     .title {
+      color: var(--text-color);
       font-size: 24px;
       font-style: normal;
       font-weight: 400;
@@ -107,6 +110,7 @@
     }
 
     .description {
+      color: var(--text-color);
       font-size: 16px;
       font-style: normal;
       font-weight: 400;

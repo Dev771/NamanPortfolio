@@ -291,6 +291,26 @@
   }
 }
 
+.mobileBento {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 0;
+  .title {
+    padding: 0 20px;
+    color: #919191;
+    text-align: left;
+    font-family: Inter;
+    font-size: 12.688px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.2px;
+    /* 143.448% */
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+  }
+}
+
 .playlist {
   display: flex;
   flex-direction: column;
