@@ -57,8 +57,6 @@ const cardData = [
 ];
 
 const Home = () => {
-
-
   return (
     <div className={styles.container}>
 

@@ -11,6 +11,10 @@
   position: relative;
   /* No background image directly on the container */
   z-index: 1;
+
+  @media screen and (max-width:500px) {
+    width: 100%;
+  }
 }
 
 .container::before {
@@ -72,6 +76,34 @@
       color: #919191;
     }
   }
+
+  @media screen and (max-width:500px) {
+    padding-top: calc(80px + 16px);
+
+    .heroTime {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .heroTitle {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 41.6px;
+      /* 130% */
+      letter-spacing: -1.28px;
+    }
+
+    .heroContent {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      width: unset;
+    }
+  }
 }
 
 .gallery {
@@ -80,6 +112,31 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+
+  @media screen and (max-width:768px) {
+    flex-direction: column;
+
+    .section:nth-child(2) {
+      flex-direction: row-reverse;
+
+      .pair2 {
+
+        flex-direction: column;
+      }
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .section {
+
+      .pair:nth-child(2) {
+        display: none;
+      }
+      .pair2:nth-child(2) {
+        display: none;
+      }
+    }
+  }
 }
 
 .section {
@@ -169,47 +226,83 @@
     top: 28px;
     left: -290px;
   }
+
+  @media screen and (max-width:500px) {
+    width: unset;
+    padding: 0 20px;
+  }
 }
 
-.exp {
-  width: 600px;
+.contentContainer {
+
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
   margin-bottom: 80px;
 
-  .heading {
-    color: var(--text-color);
-    font-family: "DM Sans";
-    font-size: 27.781px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 33.6px;
-    /* 120.945% */
-    margin-bottom: -16px;
-  }
+  .exp {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 
-  .expItem {
-    .date {
-      color: #919191;
-      font-family: Inter;
-      font-size: 12.359px;
+    .heading {
+      color: var(--text-color);
+      font-family: "DM Sans";
+      font-size: 27.781px;
       font-style: normal;
-      font-weight: 500;
-      line-height: 18.2px;
-      /* 147.257% */
-      letter-spacing: 1.12px;
-      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 33.6px;
+      /* 120.945% */
+      margin-bottom: -16px;
     }
 
-    .title {
-      color: #616161;
-      font-family: "DM Sans";
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 31.2px;
-      /* 130% */
+    .expItem {
+      .date {
+        color: #919191;
+        font-family: Inter;
+        font-size: 12.359px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18.2px;
+        /* 147.257% */
+        letter-spacing: 1.12px;
+        text-transform: uppercase;
+      }
+
+      .title {
+        color: #616161;
+        font-family: "DM Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 31.2px;
+        /* 130% */
+      }
+
+      .text {
+        color: #919191;
+        font-family: "DM Sans";
+        font-size: 12.359px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        /* 147.257% */
+        letter-spacing: 1.12px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    width: 100%;
+
+    .exp {
+      width: unset;
+      padding: 0 20px;
     }
   }
 }

@@ -31,14 +31,14 @@ const Navbar = () => {
       <ul className={styles.navLogo} onClick={scrollToTop}>
         {atTop
           ?
-          <img src={chick} alt="chick" className={styles.animate}/>
+          <img src={chick} alt="chick" className={styles.animate} />
           :
           <DownIcon />
         }
       </ul>
       <ul className={styles.navLinks} >
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
+        <li><a href="https://drive.google.com/file/d/1bOheU1B4wEu9xiXYfFpW1bDWunaRJmxf/view" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li><Link to="/about">About</Link></li>
         <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li className={styles.toggle}><Toggle /></li>

@@ -68,29 +68,58 @@ const About = () => {
         </div>
       </section>
 
-      <section className={styles.exp}>
-        <h1 className={styles.heading}> Past experiences</h1>
-        <div className={styles.expItem}>
-          <div className={styles.date}>Aug 2023 — Present · Freelance</div>
-          <div className={styles.title}> Independent Product Designer</div>
-        </div>
-        <div className={styles.expItem}>
-          <div className={styles.date}>Dec 2022 — Aug 2023 · Full Time</div>
-          <div className={styles.title}> Product Designer II — Obvious</div>
-        </div>
-        <div className={styles.expItem}>
-          <div className={styles.date}>Jan 2022 — Nov 2022 · Full time</div>
-          <div className={styles.title}> Product Designer II — Quizizz</div>
-        </div>
-        <div className={styles.expItem}>
-          <div className={styles.date}>June 2021 — Jan 2022 · Contract</div>
-          <div className={styles.title}> Product Designer — Gojek</div>
-        </div>
-        <div className={styles.expItem}>
-          <div className={styles.date}>Oct 2020 — Jan 2021 · Intern</div>
-          <div className={styles.title}>Product Design Intern — Graphy by Unacademy</div>
-        </div>
+      <section className={styles.contentContainer}>
+
+        <section className={styles.exp}>
+          <h1 className={styles.heading}> Past experiences</h1>
+          <div className={styles.expItem}>
+            <div className={styles.date}>Aug 2023 — Present · Freelance</div>
+            <div className={styles.title}> Independent Product Designer</div>
+          </div>
+          <div className={styles.expItem}>
+            <div className={styles.date}>Dec 2022 — Aug 2023 · Full Time</div>
+            <div className={styles.title}> Product Designer II — Obvious</div>
+          </div>
+          <div className={styles.expItem}>
+            <div className={styles.date}>Jan 2022 — Nov 2022 · Full time</div>
+            <div className={styles.title}> Product Designer II — Quizizz</div>
+          </div>
+          <div className={styles.expItem}>
+            <div className={styles.date}>June 2021 — Jan 2022 · Contract</div>
+            <div className={styles.title}> Product Designer — Gojek</div>
+          </div>
+          <div className={styles.expItem}>
+            <div className={styles.date}>Oct 2020 — Jan 2021 · Intern</div>
+            <div className={styles.title}>Product Design Intern — Graphy by Unacademy</div>
+          </div>
+        </section>
+
+        <section className={styles.exp}>
+          <h1 className={styles.heading}> Education</h1>
+          <div className={styles.expItem}>
+            <div className={styles.date}>Coursera 2023</div>
+            <div className={styles.title}> Google UX Design</div>
+          </div>
+          <div className={styles.expItem}>
+            <div className={styles.date}>BVICAM · 2021-2023</div>
+            <div className={styles.title}> Masters in Computer Application </div>
+          </div>
+          <div className={styles.expItem}>
+            <div className={styles.date}>BVIMR · 2018-2021</div>
+            <div className={styles.title}> Bach. in Computer Application </div>
+          </div>
+        </section>
+
+        <section className={styles.exp}>
+          <h1 className={styles.heading}> Education Skills and Interest</h1>
+          <div className={styles.expItem}>
+            <div className={styles.text}> <strong>Coursera 2023|</strong> like expanding and adapting my thought, skillset and processes to the changing problems and needs in the world around us. I thrive in ambitious, pro-active teams that value ethical product building and cultures that facilitate belonging.</div>
+          </div>
+
+        </section>
+
       </section>
+
     </section>
   )
 }
