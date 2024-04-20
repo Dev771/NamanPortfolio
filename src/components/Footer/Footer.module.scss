@@ -38,6 +38,7 @@
       line-height: 25.6px;
       /* 160% */
     }
+
   }
 
   .links {
@@ -69,6 +70,55 @@
     }
   }
 
+  @media screen and (max-width:768px) {
+    padding-top: 63px;
+    gap: 0;
+    padding-bottom: 43px;
 
+    .content {
+      .title {
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 43.2px;
+        letter-spacing: -2.1px;
+      }
+
+      .description {
+        display: none;
+      }
+
+
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+
+      .copyright {
+        display: flex;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.6px;
+      }
+
+      .quickLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        .number {
+          display: none;
+        }
+      }
+    }
+  }
 
 }

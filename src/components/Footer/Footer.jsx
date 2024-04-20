@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Footer.module.scss'
 
 const Footer = () => {
@@ -9,6 +8,7 @@ const Footer = () => {
         <h2 className={styles.title}>Ahhh you came here — Say Hi :{")"}</h2>
         <p className={styles.description}>Designed by Naman Bhateja and Developed by Anjul Kumar <br />
           ft sweet mulberries and hot coffee</p>
+
       </div>
 
       <div className={styles.links}>

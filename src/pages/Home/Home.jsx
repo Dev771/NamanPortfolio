@@ -97,23 +97,23 @@ const Home = () => {
             infiniteLoop
             autoPlay
             interval={5000}
-            // showThumbs={false}
+            showThumbs={false}
             // showArrows={false}
             showStatus={false}
             emulateTouch
             centerMode
             centerSlidePercentage={60}
-
+            renderIndicator={false}
             renderArrowPrev={(onClickHandler, hasPrev, labelPrev) =>
               hasPrev && (
-                <button type="button" onClick={onClickHandler} title={labelPrev} className={styles.carouselBtn} style={{ transform: 'rotateY(180deg)', left: '10%' }}>
+                <button type="button" onClick={onClickHandler} title={labelPrev} className={styles.carouselBtn} style={{ transform: 'rotateY(180deg)', left: '5%' }}>
                   <NextIcon />
                 </button>
               )
             }
             renderArrowNext={(onClickHandler, hasNext, labelNext) =>
               hasNext && (
-                <button type="button" onClick={onClickHandler} title={labelNext} className={styles.carouselBtn} style={{right: '10%'}} >
+                <button type="button" onClick={onClickHandler} title={labelNext} className={styles.carouselBtn} style={{ right: '5%' }} >
                   <NextIcon />
                 </button>
               )
@@ -131,6 +131,20 @@ const Home = () => {
             ))}
           </Carousel>
         </div>
+
+        <div className={styles.cardsContainerMobile}>
+          {cardData.map((card, index) => (
+            <Card
+              key={index}
+              projectimg={card.projectimg}
+              date={card.date}
+              title={card.title}
+              description={card.description}
+              url={card.url}
+            />
+          ))}
+        </div>
+
       </section>
 
       <section className={styles.playlist}>

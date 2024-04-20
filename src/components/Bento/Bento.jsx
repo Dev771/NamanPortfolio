@@ -61,7 +61,7 @@ const Bento = () => {
 
       <div className={styles.section}>
         <div className={styles.sticker}>
-          <Stickers color={'#FEE286'} img={Psyduck} />
+          <Stickers color={'#FEE286'} img={Psyduck}/>
         </div>
         <div className={styles.gif}>
           <img src={Mario} alt="mario gif" />

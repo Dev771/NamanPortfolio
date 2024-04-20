@@ -28,6 +28,10 @@
   img {
     height: 105px;
   }
+
+  @media screen and (max-width:768px) {
+    display: none;
+  }
 }
 
 .sticker>img {

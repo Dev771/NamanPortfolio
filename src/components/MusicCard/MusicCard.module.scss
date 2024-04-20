@@ -11,6 +11,15 @@
   max-height: 134px;
   border: 1px solid #EEF3DD;
   // background: #F8FAF5;
+
+  @media screen and (max-width:500px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+    max-height: unset;
+    gap: 16px;
+  }
 }
 
 .albumDetails {
@@ -77,7 +86,7 @@
 .albumMetadata {
 
   .title {
-  color: var(--text-color);
+    color: var(--text-color);
     font-family: "DM Sans";
     font-size: 27.891px;
     font-style: normal;
