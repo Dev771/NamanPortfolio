@@ -24,8 +24,14 @@
 }
 
 .navLogo {
+  cursor: pointer;
   color: var(--nav-color);
   height: 32px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .navLinks {
@@ -54,4 +60,28 @@
   width: 100px;
   height: 40px;
   scale: 0.30;
+}
+
+@keyframes jumpAndWiggle {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-20px) rotate(-30deg);
+  }
+
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-20px) rotate(30deg);
+  }
+}
+
+.animate {
+  animation: jumpAndWiggle 1s ease-in-out ;
 }

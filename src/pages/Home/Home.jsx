@@ -83,7 +83,7 @@ const Home = () => {
       </section>
 
       <Bento />
-      
+
       <div className={styles.mobileBento}>
         <h3 className={styles.title}>Some selected shots</h3>
         <MobileBento />
@@ -108,7 +108,7 @@ const Home = () => {
             showStatus={false}
             emulateTouch
             centerMode
-            centerSlidePercentage={60}
+            centerSlidePercentage={53}
             renderIndicator={false}
             renderArrowPrev={(onClickHandler, hasPrev, labelPrev) =>
               hasPrev && (
@@ -154,8 +154,8 @@ const Home = () => {
       </section>
 
       <section className={styles.playlist}>
-        <div className={styles.sticker1}><Stickers color={'#CF7100'} img={char} /></div>
-        <div className={styles.sticker2}><Stickers color={'#BA8C8C'} img={cup} /></div>
+        <div className={styles.sticker1}><Stickers color={'#EFA750'} img={char} /></div>
+        <div className={styles.sticker2}><Stickers color={'#FCBAB3'} img={cup} /></div>
         <h2 className={styles.title}>
           <span>
             Current Favorite Playlist

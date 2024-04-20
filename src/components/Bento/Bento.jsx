@@ -50,18 +50,21 @@ const Bento = () => {
         </Carousel>
       </div>
 
-      <div className={styles.section}>
+      <div className={`${styles.section} ${styles.hide}`} >
         <div className={styles.colorScroll}>
-          <div className={styles.colorBlock}></div>
+          <div className={styles.marqueeContent}>
+            <Color />
+            <Color />
+          </div>
         </div>
         <div className={styles.poster}>
           <img src={nikeImg} alt="nike" />
         </div>
       </div>
 
-      <div className={styles.section}>
+      <div className={styles.section} >
         <div className={styles.sticker}>
-          <Stickers color={'#FEE286'} img={Psyduck}/>
+          <Stickers color={'#FEE286'} img={Psyduck} />
         </div>
         <div className={styles.gif}>
           <img src={Mario} alt="mario gif" />
@@ -74,3 +77,38 @@ const Bento = () => {
 };
 
 export default Bento;
+
+
+const Color = () => (
+  <svg width="1398" height="121" viewBox="0 0 1398 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="699" height="121" fill="url(#paint0_linear_294_93)" />
+    <rect x="1398" y="121" width="699" height="121" transform="rotate(-180 1398 121)" fill="url(#paint1_linear_294_93)" />
+    <defs>
+      <linearGradient id="paint0_linear_294_93" x1="12.2632" y1="60" x2="699" y2="60" gradientUnits="userSpaceOnUse">
+        <stop offset="0.1" stop-color="#EEA908" />
+        <stop offset="0.2" stop-color="#F08A33" />
+        <stop offset="0.3" stop-color="#F04F69" />
+        <stop offset="0.4" stop-color="#EB2799" />
+        <stop offset="0.5" stop-color="#CE05E8" />
+        <stop offset="0.6" stop-color="#A90EF5" />
+        <stop offset="0.7" stop-color="#4F69D2" />
+        <stop offset="0.8" stop-color="#27A7A0" />
+        <stop offset="0.9" stop-color="#16C566" />
+        <stop offset="1" stop-color="#13D14C" />
+      </linearGradient>
+      <linearGradient id="paint1_linear_294_93" x1="1410.26" y1="181" x2="2097" y2="181" gradientUnits="userSpaceOnUse">
+        <stop offset="0.1" stop-color="#EEA908" />
+        <stop offset="0.2" stop-color="#F08A33" />
+        <stop offset="0.3" stop-color="#F04F69" />
+        <stop offset="0.4" stop-color="#EB2799" />
+        <stop offset="0.5" stop-color="#CE05E8" />
+        <stop offset="0.6" stop-color="#A90EF5" />
+        <stop offset="0.7" stop-color="#4F69D2" />
+        <stop offset="0.8" stop-color="#27A7A0" />
+        <stop offset="0.9" stop-color="#16C566" />
+        <stop offset="1" stop-color="#13D14C" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+)

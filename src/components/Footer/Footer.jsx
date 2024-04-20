@@ -1,3 +1,4 @@
+import Stickers from '../Stickers/Stickers'
 import styles from './Footer.module.scss'
 
 const Footer = () => {
@@ -20,7 +21,6 @@ const Footer = () => {
           <a href="mailto:namanbhateja.work@gmail.com" className={styles.email}>namanbhateja.work@gmail.com</a>
         </div>
       </div>
-
     </div>
   )
 }

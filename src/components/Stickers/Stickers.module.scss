@@ -3,8 +3,6 @@
   bottom: 0;
   transition: all 1s;
   z-index: -1;
-
-
 }
 
 @keyframes rotate {
@@ -12,8 +10,11 @@
     transform: rotate(0deg) scale(1);
   }
 
+  50% {
+    transform: rotate(180deg) scale(2);
+  }
   100% {
-    transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1);
   }
 }
 

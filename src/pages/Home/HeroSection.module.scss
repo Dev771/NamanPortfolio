@@ -41,7 +41,6 @@
 
   .heroTitle {
     color: var(--text-color);
-    text-align: justify;
     font-family: "DM Sans";
     font-size: 54px;
     font-style: normal;
@@ -292,10 +291,11 @@
 }
 
 .mobileBento {
-  display: flex;
+  display: none;
   flex-direction: column;
-  gap: 8px;
+  gap: 24px;
   padding: 20px 0;
+
   .title {
     padding: 0 20px;
     color: #919191;
@@ -308,6 +308,10 @@
     /* 143.448% */
     letter-spacing: 1.12px;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width:500px) {
+    display: flex;
   }
 }
 

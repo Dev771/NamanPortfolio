@@ -54,44 +54,32 @@
 
 
   .colorScroll {
+    width: 285px;
+    height: 121px;
     border-radius: 24px;
-    background: rgba(151, 151, 151, 0.40);
-    width: 305px;
-    height: 141px;
-    flex-shrink: 0;
+    border: 10px solid rgba(151, 151, 151, 0.4);
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
 
+  }
 
-    .colorBlock {
-      width: 285px;
-      height: 121px;
-      flex-shrink: 0;
-      border-radius: 16px;
-      background: linear-gradient(90deg, #3EE8FF 1.75%, #45FF41 36.14%, #FFAA2B 70.53%, #FF5252 100%);
-      transition: background-position 0.5s, background-size 0.5s;
-      background-size: 150% 100%;
-
-      animation: gradientAnimation 5s ease infinite;
-
-      &:hover {}
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
     }
 
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%
-      }
-
-      50% {
-        background-position: 100% 50%
-      }
-
-      100% {
-        background-position: 0% 50%
-      }
+    to {
+      transform: translateX(-50%);
     }
+  }
+
+  .marqueeContent {
+    display: flex;
+    align-items: center;
+    animation: marquee 20s linear infinite;
   }
 
   .poster {
@@ -147,7 +135,14 @@
     }
   }
 
+  @media screen and (max-width:768px) {
+    .hide {
+      display: none;
+    }
+  }
+
   @media screen and (max-width:500px) {
     display: none;
+
   }
 }
