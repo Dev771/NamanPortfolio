@@ -2,7 +2,6 @@ import TimeConverter from '../../utilities/Time/TimeConverter';
 import { Carousel } from 'react-responsive-carousel';
 // logo
 import logoSrc from '../../assets/hero.svg';
-import BGsrc from '../../assets/heroBG.png';
 import goodspaceLogoSrc from '../../assets/goodspace.svg';
 import bharatiLogoSrc from '../../assets/bharati.svg';
 import kloudracLogoSrc from '../../assets/kloudrac.svg';
@@ -11,6 +10,9 @@ import kkred from '../../assets/Album/red.png';
 import em from '../../assets/Album/em.png';
 import darkred from '../../assets/Album/darkred.png';
 
+//Audio
+import DilIbaadat from '../../assets/Audio/Dil-Ibaadat.mp3'
+import EminemSuperman from '../../assets/Audio/EminemSuperman.mp3'
 
 
 import styles from './HeroSection.module.scss';
@@ -24,6 +26,8 @@ import cup from '../../assets/Stickers/cup.png'
 import Stickers from '../../components/Stickers/Stickers';
 import MusicCard from '../../components/MusicCard/MusicCard';
 import MobileBento from '../../components/MobileBento/MobileBento';
+
+
 
 const cardData = [
   {
@@ -160,8 +164,8 @@ const Home = () => {
           </span>
         </h2>
         <div className={styles.cards}>
-          <MusicCard title='Say Something ' singer='Justin Timberlake, Chris Stapleton' albumCover={kk} vinyl={kkred} songUrl='' />
-          <MusicCard title='Say Something ' singer='Justin Timberlake, Chris Stapleton' albumCover={em} vinyl={darkred} />
+          <MusicCard title='Dil Ibaadat (from "tum mile") ' singer='Pritam Chakraborty, KK' albumCover={kk} vinyl={kkred} songUrl={DilIbaadat} />
+          <MusicCard title='Superman ' singer='Eminem' albumCover={em} vinyl={darkred} songUrl={EminemSuperman} />
         </div>
       </section>
     </div>

@@ -111,7 +111,7 @@ const About = () => {
         </section>
 
         <section className={styles.exp}>
-          <h1 className={styles.heading}> Education Skills and Interest</h1>
+          <h1 className={styles.heading}> Education, Skills and Interest</h1>
           <div className={styles.expItem}>
             <div className={styles.text}> <strong>Coursera 2023|</strong> like expanding and adapting my thought, skillset and processes to the changing problems and needs in the world around us. I thrive in ambitious, pro-active teams that value ethical product building and cultures that facilitate belonging.</div>
           </div>

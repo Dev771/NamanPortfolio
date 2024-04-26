@@ -32,6 +32,7 @@ const MusicCard = ({ albumCover, vinyl, title, singer, songUrl }) => {
   return (
     <div className={styles.albumContainer} >
       <div className={styles.albumDetails} onClick={togglePlayPause}>
+        <audio src={songUrl} ref={audioRef}></audio>
         <div className={styles.albumCover}>
           <img src={albumCover} alt="" />
         </div>
