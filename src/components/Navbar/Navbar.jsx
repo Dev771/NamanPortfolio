@@ -43,6 +43,8 @@ const Navbar = () => {
         <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li className={styles.toggle}><Toggle /></li>
       </ul>
+
+
     </nav>
   );
 };

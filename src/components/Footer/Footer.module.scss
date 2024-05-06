@@ -9,6 +9,8 @@
   justify-content: center;
 
   gap: 90px;
+  position: relative;
+  overflow: hidden;
 
   .content {
     display: flex;
@@ -125,4 +127,13 @@
 
 .highlight {
   color: #6159D4;
+}
+
+.topGradient {
+  max-height: 488px;
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 9;
 }

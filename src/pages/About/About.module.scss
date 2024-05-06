@@ -17,6 +17,14 @@
   }
 }
 
+.topGradient {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 9;
+}
+
 .container::before {
   content: "";
   position: absolute;
@@ -132,6 +140,7 @@
       .pair:nth-child(2) {
         display: none;
       }
+
       .pair2:nth-child(2) {
         display: none;
       }

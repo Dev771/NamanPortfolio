@@ -11,7 +11,7 @@ const Card = ({ projectimg, date, title, description, url }) => {
 
           <div className={styles.footer}>
             <div className={styles.details}>
-              <div className={styles.date}>{date}</div>
+              {/* <div className={styles.date}>{date}</div> */}
               <h2 className={styles.title}>{title}</h2>
               <p className={styles.description}>{description}</p>
             </div>

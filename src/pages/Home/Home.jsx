@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import TimeConverter from '../../utilities/Time/TimeConverter';
 import { Carousel } from 'react-responsive-carousel';
 // logo
@@ -17,7 +18,11 @@ import EminemSuperman from '../../assets/Audio/EminemSuperman.mp3'
 
 import styles from './HeroSection.module.scss';
 //cards
-import projectimg from '../../assets/projects/project.png';
+import p1 from '../../assets/projects/p1.png';
+import p2 from '../../assets/projects/p2.png';
+import p3 from '../../assets/projects/p3.png';
+import p4 from '../../assets/projects/p4.png';
+import p5 from '../../assets/projects/p5.png';
 import Card from '../../components/Card/Card';
 import Bento from '../../components/Bento/Bento';
 import bulb from '../../assets/Stickers/bulb.png'
@@ -31,38 +36,49 @@ import MobileBento from '../../components/MobileBento/MobileBento';
 
 const cardData = [
   {
-    projectimg: projectimg,
+    projectimg: p1,
     date: "Graphy · 2021",
-    title: "Project 2",
-    description: "Redesigned existing and new features like search, polls, quiz, live and more",
-    url: "your-clickable-url-1"
+    title: "Goodspace AI Interview",
+    description: "Revolutionizing AI Job Interviews with Goodspace",
+    url: "https://bootcamp.uxdesign.cc/revolutionizing-ai-job-interviews-with-goodspace-e52384c89b9e"
   },
   {
-    projectimg: projectimg,
+    projectimg: p2,
     date: "Graphy · 2021",
-    title: "Project 2",
-    description: "Redesigned existing and new features like search, polls, quiz, live and more",
-    url: "your-clickable-url-2"
+    title: "Mailchimp",
+    description: "Homepage design challenge",
+    url: "https://www.behance.net/gallery/181530351/Mailchimp-Homepage-design-challenge-(UI-design)"
   },
   {
-    projectimg: projectimg,
+    projectimg: p3,
     date: "Graphy · 2021",
-    title: "Project 2",
-    description: "Redesigned existing and new features like search, polls, quiz, live and more",
-    url: "your-clickable-url-3"
+    title: "Duolingo",
+    description: "Onboarding screens designs",
+    url: "https://www.behance.net/gallery/179669299/Duolingo-onboarding-screens-(UI-design)"
   },
   {
-    projectimg: projectimg,
+    projectimg: p4,
     date: "Graphy · 2021",
-    title: "Project 2",
-    description: "Redesigned existing and new features like search, polls, quiz, live and more",
-    url: "your-clickable-url-4"
+    title: "Green genie (UX Case study)",
+    description: "One stop solution for all your healthy needs",
+    url: "https://www.behance.net/gallery/170629161/Green-Genie-Health-at-your-doorsteps"
+  },
+  {
+    projectimg: p5,
+    date: "Graphy · 2021",
+    title: "DMRC",
+    description: "Heuristic evaluation",
+    url: "https://www.behance.net/gallery/192925797/DMRC-Heuristic-Evaluation"
   }
 ];
 
 const Home = () => {
   return (
     <div className={styles.container}>
+
+      <div className={styles.topGradient}>
+        <TopGradient />
+      </div>
 
       <section className={styles.heroSection}>
         {/* <img src={BGsrc} alt="Background" className={styles.bgImage} /> */}
@@ -72,7 +88,7 @@ const Home = () => {
           <h1 className={styles.heroTitle}>Not so product designer,<br />
             Part time photographer,<br />
             love food, music, art</h1>
-          <h2 className={styles.heroSubtitle}>It's <strong>नमन भटेजा </strong> <span>👋</span> , Your friendly neighbourhood product based in Delhi,<br />
+          <h2 className={styles.heroSubtitle}>It's <strong>नमन भटेजा </strong> <span>👋</span> ,Your friendly neighbourhood product based in Delhi,<br />
             India. I enjoy crafting exceptional digital interfaces that offer<br />
             delightful and intuitive experiences.</h2>
           <p className={styles.heroText}>I worked with...</p>
@@ -177,7 +193,32 @@ export default Home
 
 const NextIcon = () => (
   <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2929 19.7929C26.6834 19.4024 27.3166 19.4024 27.7071 19.7929L37.7071 29.7929C38.0976 30.1834 38.0976 30.8166 37.7071 31.2071L27.7071 41.2071C27.3166 41.5976 26.6834 41.5976 26.2929 41.2071C25.9024 40.8166 25.9024 40.1834 26.2929 39.7929L35.5858 30.5L26.2929 21.2071C25.9024 20.8166 25.9024 20.1834 26.2929 19.7929Z" fill="white" />
+    <path fillRule="evenodd" clipRule="evenodd" d="M26.2929 19.7929C26.6834 19.4024 27.3166 19.4024 27.7071 19.7929L37.7071 29.7929C38.0976 30.1834 38.0976 30.8166 37.7071 31.2071L27.7071 41.2071C27.3166 41.5976 26.6834 41.5976 26.2929 41.2071C25.9024 40.8166 25.9024 40.1834 26.2929 39.7929L35.5858 30.5L26.2929 21.2071C25.9024 20.8166 25.9024 20.1834 26.2929 19.7929Z" fill="white" />
+  </svg>
+
+)
+
+const TopGradient = () => (
+  <svg width="1304" height="482" viewBox="0 0 1304 482" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.3" filter="url(#filter0_f_421_3802)">
+      <path d="M579.373 81.9746C636.324 74.3816 656.259 126.408 732.136 106.394C827.891 81.1365 1120.58 270.654 1102.64 157.394C1078.64 5.89353 738.381 -222.259 609.559 -205.084C480.736 -187.91 410.534 -158.531 386.577 -126.387C334.381 -56.3505 450.551 99.1486 579.373 81.9746Z" fill="url(#paint0_linear_421_3802)" />
+      <path d="M600.743 80.6508C736.677 57.9038 901.636 -0.606174 750.1 -71.4702C731.807 -96.4012 552.853 -128.577 416.919 -105.831C280.981 -83.0842 171.211 179.001 207.631 263.893C244.061 348.785 464.809 103.398 600.743 80.6508Z" fill="url(#paint1_linear_421_3802)" />
+    </g>
+    <defs>
+      <filter id="filter0_f_421_3802" x="0.574219" y="-406" width="1302.85" height="887.675" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_421_3802" />
+      </filter>
+      <linearGradient id="paint0_linear_421_3802" x1="1055.99" y1="47.9175" x2="771.046" y2="-153.267" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#5FECFF" />
+        <stop offset="1" stopColor="#0085FF" />
+      </linearGradient>
+      <linearGradient id="paint1_linear_421_3802" x1="409.335" y1="238.209" x2="619.537" y2="18.2778" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#FFB951" />
+        <stop offset="1" stopColor="#F90068" />
+      </linearGradient>
+    </defs>
   </svg>
 
 )
