@@ -5,7 +5,7 @@ const Card = ({ projectimg, date, title, description, url }) => {
   return (
     <div className={styles.container}>
       <article className={styles.card}>
-        <a href={url} className={styles.card}>
+        <a href={url} target='_blank' className={styles.card}>
 
           <img src={projectimg} alt="project" className={styles.image} />
 
