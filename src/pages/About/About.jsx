@@ -16,6 +16,17 @@ import nike from '../../assets/Stickers/nike.png';
 import tea from '../../assets/Gallary/tea.png';
 import temple from '../../assets/Gallary/temple.png';
 
+const experiences = [
+  { suptitle: "Aug 2023 — Present · FULL TIME", title: "Design at Goodspace" },
+  { suptitle: "APR 2023 — JUL 2023 · INTERNSHIP", title: "UI Designer at Kloudrac" },
+  { suptitle: "Jan 2022 — Nov 2022 · Full TIME", title: "UI Designer & Developer at BVICAM" },
+];
+
+const education = [
+  { suptitle: "Coursera 2023", title: "Google UX Design" },
+  { suptitle: "BVICAM · 2021-2023", title: "Masters in Computer Application" },
+  { suptitle: "BVIMR · 2018-2021", title: "Bach. in Computer Application" }
+];
 
 const About = () => {
   return (
@@ -75,42 +86,22 @@ const About = () => {
 
         <section className={styles.exp}>
           <h1 className={styles.heading}> Past experiences</h1>
-          <div className={styles.expItem}>
-            <div className={styles.date}>Aug 2023 — Present · Freelance</div>
-            <div className={styles.title}> Independent Product Designer</div>
-          </div>
-          <div className={styles.expItem}>
-            <div className={styles.date}>Dec 2022 — Aug 2023 · Full Time</div>
-            <div className={styles.title}> Product Designer II — Obvious</div>
-          </div>
-          <div className={styles.expItem}>
-            <div className={styles.date}>Jan 2022 — Nov 2022 · Full time</div>
-            <div className={styles.title}> Product Designer II — Quizizz</div>
-          </div>
-          <div className={styles.expItem}>
-            <div className={styles.date}>June 2021 — Jan 2022 · Contract</div>
-            <div className={styles.title}> Product Designer — Gojek</div>
-          </div>
-          <div className={styles.expItem}>
-            <div className={styles.date}>Oct 2020 — Jan 2021 · Intern</div>
-            <div className={styles.title}>Product Design Intern — Graphy by Unacademy</div>
-          </div>
+          {experiences.map((exp, index) => (
+            <div key={index} className={styles.expItem}>
+              <div className={styles.date}>{exp.suptitle}</div>
+              <div className={styles.title}>{exp.title}</div>
+            </div>
+          ))}
         </section>
 
         <section className={styles.exp}>
           <h1 className={styles.heading}> Education</h1>
-          <div className={styles.expItem}>
-            <div className={styles.date}>Coursera 2023</div>
-            <div className={styles.title}> Google UX Design</div>
-          </div>
-          <div className={styles.expItem}>
-            <div className={styles.date}>BVICAM · 2021-2023</div>
-            <div className={styles.title}> Masters in Computer Application </div>
-          </div>
-          <div className={styles.expItem}>
-            <div className={styles.date}>BVIMR · 2018-2021</div>
-            <div className={styles.title}> Bach. in Computer Application </div>
-          </div>
+          {education.map((exp, index) => (
+            <div key={index} className={styles.expItem}>
+              <div className={styles.date}>{exp.suptitle}</div>
+              <div className={styles.title}>{exp.title}</div>
+            </div>
+          ))}
         </section>
 
         <section className={styles.exp}>

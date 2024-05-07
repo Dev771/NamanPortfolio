@@ -331,6 +331,8 @@
   padding-bottom: 150px;
   position: relative;
 
+
+
   .sticker1 {
     position: absolute;
     top: 215px;
@@ -371,6 +373,13 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+    position: relative;
+  }
+
+  .dialog {
+    position: absolute;
+    top: -5rem;
+    left: -16%;
   }
 
   @media screen and (max-width:500px) {
@@ -387,6 +396,13 @@
 
     .cards {
       width: calc(100% - 40px);
+    }
+
+    .dialog {
+      position: absolute;
+      top: -6rem;
+      left: -16%;
+      transform: scale(0.8);
     }
   }
 }
