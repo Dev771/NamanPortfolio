@@ -18,6 +18,13 @@
     justify-content: start;
     overflow: scroll;
 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
     .title {
       color: var(--text-color);
       text-align: center;

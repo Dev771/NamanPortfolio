@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import TimeConverter from '../../utilities/Time/TimeConverter';
+import WindowWidth from '../../utilities/windowWidth/WindowWidth';
 import { Carousel } from 'react-responsive-carousel';
 // logo
 import logoSrc from '../../assets/hero.svg';
@@ -126,7 +127,7 @@ const Home = () => {
             showStatus={false}
             emulateTouch
             centerMode
-            centerSlidePercentage={53}
+            centerSlidePercentage={WindowWidth() > 800 ? 53 : 100}
             renderIndicator={false}
             renderArrowPrev={(onClickHandler, hasPrev, labelPrev) =>
               hasPrev && (
@@ -201,7 +202,7 @@ const NextIcon = () => (
 )
 
 const TopGradient = () => (
-  <svg width="1304" height="482" viewBox="0 0 1304 482" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="100%" height="482" viewBox="0 0 1304 482" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g opacity="0.3" filter="url(#filter0_f_421_3802)">
       <path d="M579.373 81.9746C636.324 74.3816 656.259 126.408 732.136 106.394C827.891 81.1365 1120.58 270.654 1102.64 157.394C1078.64 5.89353 738.381 -222.259 609.559 -205.084C480.736 -187.91 410.534 -158.531 386.577 -126.387C334.381 -56.3505 450.551 99.1486 579.373 81.9746Z" fill="url(#paint0_linear_421_3802)" />
       <path d="M600.743 80.6508C736.677 57.9038 901.636 -0.606174 750.1 -71.4702C731.807 -96.4012 552.853 -128.577 416.919 -105.831C280.981 -83.0842 171.211 179.001 207.631 263.893C244.061 348.785 464.809 103.398 600.743 80.6508Z" fill="url(#paint1_linear_421_3802)" />

@@ -20,7 +20,7 @@ const Bento = () => {
   return (
     <div className={styles.bento}>
       <div className={styles.carousel}>
-        <div className={styles.title}>Some selected shots</div>
+      <div className={styles.title}>Some selected shots</div>
         <Carousel
           infiniteLoop
           autoPlay
@@ -30,7 +30,7 @@ const Bento = () => {
           showStatus={false}
           emulateTouch
           centerMode
-          centerSlidePercentage={85}
+          centerSlidePercentage={100}
         >
           <div className={styles.carouselItem}>
             <img src={carouselItem1} alt="" />
