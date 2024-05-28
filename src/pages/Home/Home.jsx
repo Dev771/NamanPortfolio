@@ -88,7 +88,7 @@ const Home = () => {
           <time className={styles.heroTime}><TimeConverter inputTime={new Date()} /> local time</time>
           <h1 className={styles.heroTitle}>Not so product designer,<br />
             Part time photographer,<br />
-            love food, music, art, west Delhity</h1>
+            loves food, music, art</h1>
           <h2 className={styles.heroSubtitle}>It's <strong>नमन भटेजा </strong> <span>👋</span> ,Your friendly neighbourhood product based in Delhi,<br />
             India. I enjoy crafting exceptional digital interfaces that offer<br />
             delightful and intuitive experiences.</h2>
