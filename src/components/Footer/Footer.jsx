@@ -17,7 +17,7 @@ const Footer = () => {
       <div className={styles.links}>
         <p className={styles.copyright}>© April 2024, Naman Bhateja</p>
         <div className={styles.quickLinks}>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.linkedin}>LinkedIn</a>
+          <a href="https://www.linkedin.com/in/namanbhateja0808/" target="_blank" rel="noopener noreferrer" className={styles.linkedin}>LinkedIn</a>
           <a href="https://drive.google.com/file/d/1CA6hUPXG48QfdYlay9CXXzqg3tQ5gk-m/view" target="_blank" rel="noopener noreferrer" className={styles.resume}>Resume</a>
           <a href="tel:+919811535385" className={styles.number}>+91 9811535385</a>
           <a href="mailto:namanbhateja.work@gmail.com" className={styles.email}>namanbhateja.work@gmail.com</a>
