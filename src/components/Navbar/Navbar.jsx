@@ -38,7 +38,7 @@ const Navbar = () => {
       </ul>
       <ul className={styles.navLinks} >
         <li><Link to="/">Home</Link></li>
-        <li><a href="https://drive.google.com/file/d/1bOheU1B4wEu9xiXYfFpW1bDWunaRJmxf/view" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="https://drive.google.com/file/d/1CA6hUPXG48QfdYlay9CXXzqg3tQ5gk-m/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li><Link to="/about">About</Link></li>
         <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li className={styles.toggle}><Toggle /></li>
