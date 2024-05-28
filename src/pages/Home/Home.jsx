@@ -88,7 +88,7 @@ const Home = () => {
           <time className={styles.heroTime}><TimeConverter inputTime={new Date()} /> local time</time>
           <h1 className={styles.heroTitle}>Not so product designer,<br />
             Part time photographer,<br />
-            love food, music, art</h1>
+            love food, music, art, west Delhity</h1>
           <h2 className={styles.heroSubtitle}>It's <strong>नमन भटेजा </strong> <span>👋</span> ,Your friendly neighbourhood product based in Delhi,<br />
             India. I enjoy crafting exceptional digital interfaces that offer<br />
             delightful and intuitive experiences.</h2>
@@ -131,14 +131,14 @@ const Home = () => {
             renderIndicator={false}
             renderArrowPrev={(onClickHandler, hasPrev, labelPrev) =>
               hasPrev && (
-                <button type="button" onClick={onClickHandler} title={labelPrev} className={styles.carouselBtn} style={{ transform: 'rotateY(180deg)', left: '5%' }}>
+                <button type="button" onClick={onClickHandler} title={labelPrev} className={styles.carouselBtn} style={{ transform: 'rotateY(180deg)', left: '2%' }}>
                   <NextIcon />
                 </button>
               )
             }
             renderArrowNext={(onClickHandler, hasNext, labelNext) =>
               hasNext && (
-                <button type="button" onClick={onClickHandler} title={labelNext} className={styles.carouselBtn} style={{ right: '5%' }} >
+                <button type="button" onClick={onClickHandler} title={labelNext} className={styles.carouselBtn} style={{ right: '2%' }} >
                   <NextIcon />
                 </button>
               )
