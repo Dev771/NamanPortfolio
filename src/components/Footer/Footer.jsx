@@ -9,7 +9,8 @@ const Footer = () => {
 
       <div className={styles.content}>
         <h2 className={styles.title}>Ahhh you came here — Say Hi :{")"}</h2>
-        <p className={styles.description}>Designed by Naman Bhateja and Developed by <a href="https://portfoliov1-yvoj.onrender.com/" target='_blank' className={styles.highlight}>Anjul Kumar</a>  <br />
+        {/* <p className={styles.description}>Designed by Naman Bhateja and Developed by <a href="https://portfoliov1-yvoj.onrender.com/" target='_blank' className={styles.highlight}>Anjul Kumar</a>  <br /> */}
+        <p className={styles.description}>Designed by Naman Bhateja and Developed by <a href="https://github.com/Dev771" target='_blank' className={styles.highlight}>Dev Garg</a>  <br />
           ft sweet mulberries and hot coffee</p>
 
       </div>
