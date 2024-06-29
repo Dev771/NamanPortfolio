@@ -30,7 +30,6 @@
   height: 32px;
 
   img {
-    width: 100%;
     height: 100%;
   }
 }
@@ -84,6 +83,7 @@
 }
 
 .animate {
+  aspect-ratio: 1/1;
   animation: jumpAndWiggle 1s ease-in-out ;
 }
 
